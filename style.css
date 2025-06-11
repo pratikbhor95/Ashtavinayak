@@ -1,0 +1,288 @@
+/* --- Global & Reset Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* --- Header --- */
+#main-header {
+  background: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+#main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-header .logo {
+  font-weight: 700;
+  color: #e67e22;
+  margin: 0;
+}
+
+#main-header .header-contact {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* --- Hero Section --- */
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://via.placeholder.com/1920x1080.png?text=Beautiful+Ganesha+Temple) no-repeat center center/cover;
+  height: 90vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #e67e22;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #d35400;
+}
+
+/* --- Offer Details Section --- */
+#offer-details {
+  background: #fff;
+}
+.offer-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  border-top: 5px solid #e67e22;
+}
+
+.offer-card .price-tag {
+  margin-bottom: 25px;
+}
+.offer-card .price-tag h3 {
+  font-size: 3rem;
+  color: #27ae60;
+  margin-bottom: 0;
+}
+.offer-card .price-tag p {
+  margin-top: -5px;
+  color: #777;
+}
+
+.offer-card h3 { font-size: 1.5rem; }
+.offer-card h4 { font-size: 1.2rem; margin-top: 30px; border-top: 1px solid #eee; padding-top: 25px; }
+.offer-card .pickup-info { color: #555; font-style: italic; }
+
+.offer-card ul {
+  list-style: none;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.offer-card ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.offer-card ul li i {
+  color: #27ae60;
+  margin-right: 15px;
+}
+
+/* --- Itinerary Section --- */
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.day-plan {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+}
+
+.day-plan h3 {
+  border-bottom: 2px solid #e67e22;
+  padding-bottom: 10px;
+}
+
+.day-plan ul {
+  list-style: none;
+}
+
+.day-plan ul li {
+  margin-bottom: 10px;
+}
+
+.day-plan ul li i {
+  color: #e67e22;
+  margin-right: 10px;
+}
+
+/* --- Gallery Section --- */
+#gallery {
+  background: #fff;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* --- Booking Section --- */
+#booking {
+  background: #2c3e50;
+  color: #fff;
+}
+
+#booking h2, #booking p {
+  color: #fff;
+}
+
+#booking .contact-info {
+  margin: 40px 0;
+}
+
+#booking .contact-info i {
+  font-size: 2rem;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+#booking .contact-info a {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px dotted #e67e22;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.whatsapp-button i {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+.whatsapp-button:hover {
+  background: #128C7E;
+}
+
+/* --- Footer --- */
+footer {
+  background: #1f2b38;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* --- Responsive Styles --- */
+@media(max-width: 768px) {
+  h1 { font-size: 2.5rem !important; }
+  h2 { font-size: 2rem; }
+
+  #main-header .logo { font-size: 1.2rem; }
+  #main-header .header-contact { font-size: 0.9rem; }
+
+  #hero { height: 70vh; }
+
+  .itinerary-grid {
+      grid-template-columns: 1fr;
+  }
+
+  #booking .contact-info a {
+      font-size: 1.8rem;
+  }
+}
