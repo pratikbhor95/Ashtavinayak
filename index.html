@@ -1,128 +1,815 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashtavinayak Yatra from Pune | 2-Day Tour</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for a nice typography -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <header id="main-header">
+    <header id="hero">
         <div class="container">
             <h2 class="logo">Divine Journeys</h2>
-            <a href="tel:+918378801246" class="header-contact">
-                <i class="fa-solid fa-phone"></i> +91-8378801246
-            </a>
+            <div class="hero-content">
+                <img src="https://svgshare.com/i/189E.svg" alt="Ganesha Icon" class="ganesha-icon">
+                <h1>Ashtavinayak Yatra</h1>
+                <p class="subtitle">Your complete 2-Day pilgrimage from Pune, every weekend.</p>
+                <a href="#offer" class="cta-button">See The Offer &darr;</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Embark on a Divine 2-Day Ashtavinayak Yatra</h1>
-                <p>A complete, comfortable, and spiritually enriching pilgrimage from Pune.</p>
-                <a href="#booking" class="cta-button">Book Your Seat Now</a>
-            </div>
-        </section>
-
-        <!-- The Offer Details Section -->
-        <section id="offer-details">
+        <section id="offer">
             <div class="container">
-                <h2>Your Sacred Weekend Getaway Package</h2>
                 <div class="offer-card">
                     <div class="price-tag">
-                        <h3>Just ₹2500/-</h3>
-                        <p>per person</p>
+                        <h3>₹2500</h3>
+                        <span>per person</span>
                     </div>
-                    <h3><i class="fa-solid fa-calendar-days"></i> Every Saturday & Sunday</h3>
-                    <p class="pickup-info"><i class="fa-solid fa-bus"></i> Pickup & Drop from various locations in Pune</p>
-                    
-                    <h4>What's Included in Your Yatra:</h4>
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i> Air-Conditioned Bus Fare</li>
-                        <li><i class="fa-solid fa-hotel"></i> 1 Night Comfortable Hotel Stay</li>
-                        <li><i class="fa-solid fa-utensils"></i> Day 1: Breakfast & Lunch</li>
-                        <li><i class="fa-solid fa-utensils"></i> Day 2: Breakfast & Lunch</li>
-                        <li><i class="fa-solid fa-user-group"></i> Expert Tour Guide</li>
-                    </ul>
+                    <div class="offer-details">
+                        <h2>The All-Inclusive Weekend Package</h2>
+                        <p class="departure-info">
+                            <i class="fa-solid fa-bus"></i> Departs Every Saturday from Pune (5:00 AM)
+                        </p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> Bus Travel</li>
+                            <li><i class="fa-solid fa-hotel"></i> 1 Night Stay</li>
+                            <li><i class="fa-solid fa-utensils"></i> 2-Breakfast, 2-Lunch & 1 Dinner </li>
+                            <li><i class="fa-solid fa-person-praying"></i> Tour Guide</li>
+                        </ul>
+                        <a href="#booking" class="booking-link">Book Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Itinerary Section -->
         <section id="itinerary">
             <div class="container">
-                <h2>A Glimpse of Your 2-Day Journey</h2>
-                <div class="itinerary-grid">
-                    <div class="day-plan">
-                        <h3>Day 1 (Saturday)</h3>
-                        <ul>
-                            <li><i class="fa-solid fa-om"></i> Start from Pune</li>
-                            <li><i class="fa-solid fa-om"></i> Morgaon (Mayureshwar)</li>
-                            <li><i class="fa-solid fa-om"></i> Siddhatek (Siddhivinayak)</li>
-                            <li><i class="fa-solid fa-om"></i> Theur (Chintamani)</li>
-                            <li><i class="fa-solid fa-om"></i> Ranjangaon (Mahaganapati)</li>
-                            <li><i class="fa-solid fa-moon"></i> Overnight Stay</li>
-                        </ul>
+                <h2 class="section-title">The Sacred Path of the Eight Ganeshas</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon day-marker">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Day 1: Pune &rarr; Morgaon &rarr; Siddhatek &rarr; Theur &rarr; Ranjangaon</h3>
+                            <p>Overnight halt at a comfortable hotel near Lenyadri/Ozar.</p>
+                        </div>
                     </div>
-                    <div class="day-plan">
-                        <h3>Day 2 (Sunday)</h3>
-                        <ul>
-                            <li><i class="fa-solid fa-om"></i> Lenyadri (Girijatmaj)</li>
-                            <li><i class="fa-solid fa-om"></i> Ozar (Vighneshwar)</li>
-                            <li><i class="fa-solid fa-om"></i> Pali (Ballaleshwar)</li>
-                            <li><i class="fa-solid fa-om"></i> Mahad (Varadvinayak)</li>
-                            <li><i class="fa-solid fa-house"></i> Return to Pune by evening</li>
-                        </ul>
+                    <div class="timeline-item">
+                        <div class="timeline-icon day-marker">
+                            <i class="fa-solid fa-moon"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Day 2: Lenyadri &rarr; Ozar &rarr; Pali &rarr; Mahad &rarr; Pune</h3>
+                            <p>Return to Pune by approximately 9:00 PM on Sunday.</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="temple-grid">
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Mayureshwar</div>
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Siddhivinayak</div>
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Chintamani</div>
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Mahaganapati</div>
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Girijatmaj</div>
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Vighneshwar</div>
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Ballaleshwar</div>
+                    <div class="temple-card"><i class="fa-solid fa-om"></i> Varadvinayak</div>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Section -->
-        <section id="gallery">
-            <div class="container">
-                <h2>Moments from the Yatra</h2>
-                <div class="photo-grid">
-                    <!-- REPLACE these placeholder links with your actual image files -->
-                    <img src="https://via.placeholder.com/400x300.png?text=Morgaon+Temple" alt="Morgaon Temple">
-                    <img src="https://via.placeholder.com/400x300.png?text=Happy+Devotees" alt="Happy Devotees">
-                    <img src="https://via.placeholder.com/400x300.png?text=Lenyadri+Caves" alt="Lenyadri Caves">
-                    <img src="https://via.placeholder.com/400x300.png?text=Comfortable+Bus" alt="Comfortable Bus">
-                </div>
-            </div>
-        </section>
-
-        <!-- Booking & Contact Section -->
         <section id="booking">
             <div class="container">
-                <h2>Book Your Sacred Journey Today!</h2>
-                <p>Seats are limited and fill up fast. Call or WhatsApp us to confirm your booking and for more information.</p>
+                <h2>Ready for Your Divine Journey?</h2>
+                <p>Seats fill up fast! Call or message us on WhatsApp to book your spot for this weekend's Yatra.</p>
                 
-                <div class="contact-info">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <a href="tel:+918378801246">+91-8378801246</a>
+                <div class="contact-buttons">
+                    <a href="tel:+918378801246" class="contact-button call-button">
+                        <i class="fa-solid fa-phone"></i> Call to Book
+                    </a>
+                    <a href="https://wa.me/918378801246?text=Hello!%20I'm%20interested%20in%20the%20Ashtavinayak%20Yatra." class="contact-button whatsapp-button" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                    </a>
                 </div>
-
-                <a href="https://wa.me/918378801246?text=Hello!%20I'm%20interested%20in%20the%20Ashtavinayak%20Yatra%20from%20Pune." class="whatsapp-button" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Divine Journeys. All Rights Reserved.</p>
+        <p>© 2025 Divine Journeys. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashtavinayak Yatra from Pune | Divine Journeys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        /* *
+         * FINAL REFINED COLOR SCHEME
+         * A warmer, more traditional palette with Saffron, deep Brown, and Gold accents.
+         * */
+        :root {
+            --primary-saffron: #E65100;
+            --primary-dark-brown: #4E342E;
+            --accent-gold: #D4AF37;
+            --background-cream: #FFF8E1;
+            --background-dark: #3E2723; /* A slightly warmer dark brown */
+            --white: #FFFFFF;
+            --text-primary: #4E342E;
+            --text-secondary: #795548;
+
+            --shadow-subtle: 0 4px 15px rgba(78, 52, 46, 0.07);
+            --shadow-medium: 0 8px 25px rgba(78, 52, 46, 0.12);
+            --shadow-heavy: 0 15px 35px rgba(78, 52, 46, 0.2);
+            
+            --gradient-saffron: linear-gradient(135deg, var(--primary-saffron) 0%, #FF9800 100%);
+            --gradient-dark: linear-gradient(135deg, var(--primary-dark-brown) 0%, #6D4C41 100%);
+            --gradient-hero: linear-gradient(to top, rgba(78, 52, 46, 0.9) 0%, rgba(78, 52, 46, 0.7) 60%, rgba(78, 52, 46, 0.4) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--background-cream);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header Styles --- */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 248, 225, 0.85); /* Cream background with blur */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(78, 52, 46, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            padding: 0.75rem 0;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-dark-brown);
+        }
+
+        .header-contact .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 1.25rem;
+            background: var(--primary-dark-brown);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .header-contact .contact-btn:hover {
+            transform: translateY(-2px);
+            background: var(--primary-saffron);
+            color: var(--white);
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            height: 100vh;
+            background: var(--gradient-hero), url('https://images.unsplash.com/photo-1617639485633-23a5e53696a1?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            z-index: 10;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            font-weight: 300;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2.5rem;
+            background: var(--primary-saffron);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-medium);
+            border: 2px solid transparent;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: var(--shadow-heavy);
+            background: var(--white);
+            color: var(--primary-dark-brown);
+            border-color: var(--primary-dark-brown);
+        }
+
+        /* --- Section Shared Styles --- */
+        .section {
+            padding: 6rem 0;
+        }
+        .section.alternate-bg {
+            background-color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-dark-brown);
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* --- Pricing Section --- */
+        .pricing-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(78, 52, 46, 0.15);
+        }
+        
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 6px;
+            background: var(--gradient-saffron);
+        }
+
+        .price-badge {
+            background: var(--gradient-dark);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .price {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
+            font-weight: 700;
+            color: var(--primary-dark-brown);
+            margin-bottom: 0.5rem;
+        }
+
+        .price-subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 2.5rem;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .features-list li {
+            padding: 0.6rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .features-list i {
+            color: var(--primary-saffron);
+            font-size: 1.2rem;
+        }
+        
+        .pricing-card .cta-button {
+            background: var(--primary-dark-brown);
+        }
+
+        .pricing-card .cta-button:hover {
+            background: var(--primary-saffron);
+            color: var(--white);
+            border-color: transparent;
+        }
+
+
+        /* --- Itinerary Section --- */
+        .itinerary-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .day-card {
+            background: linear-gradient(135deg, var(--white) 0%, var(--background-cream) 100%);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-subtle);
+            position: relative;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(78, 52, 46, 0.1);
+        }
+
+        .day-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--primary-saffron);
+        }
+
+        .day-badge {
+            position: absolute;
+            top: -15px;
+            left: 2rem;
+            background: var(--gradient-saffron);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 10px rgba(230, 81, 0, 0.3);
+        }
+
+        .day-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            margin-top: 1rem;
+            color: var(--primary-dark-brown);
+        }
+
+        .temple-list { list-style: none; }
+        .temple-list li {
+            padding: 0.8rem 0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            border-bottom: 1px solid rgba(78, 52, 46, 0.1);
+        }
+        .temple-list li:last-child { border-bottom: none; }
+        .temple-icon {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            min-width: 20px;
+        }
+
+        /* --- Photo Gallery Section --- */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .photo-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: var(--shadow-medium);
+            cursor: pointer;
+        }
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .photo-item:hover img {
+            transform: scale(1.1);
+        }
+        .photo-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(78, 52, 46, 0.6);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .photo-item:hover .photo-overlay {
+            opacity: 1;
+        }
+
+
+        /* --- Contact Section --- */
+        .contact {
+            background: var(--background-dark);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .contact .section-title { color: var(--white); }
+        .contact .section-subtitle { color: rgba(255,248,225,0.7); }
+
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 2.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            background: var(--primary-saffron);
+            color: var(--white);
+            transform: translateY(-5px);
+        }
+
+        .contact-icon { font-size: 1.8rem; }
+        .contact-text div:first-child { font-weight: 600; }
+        .contact-text div:last-child { opacity: 0.8; }
+
+        /* --- WhatsApp Floating Button --- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: var(--shadow-heavy);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background: var(--background-dark);
+            color: var(--text-secondary);
+            padding: 2.5rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .section { padding: 4rem 0; }
+            .section-title { font-size: 2.2rem; }
+            .itinerary-container { grid-template-columns: 1fr; gap: 3rem; }
+            .contact-methods { flex-direction: column; align-items: center; }
+            .header-contact { display: none; }
+        }
+
+        @media (max-width: 480px) {
+            .hero { height: 90vh; }
+            .hero h1 { font-size: 2.2rem; }
+            .pricing-card, .day-card { padding: 2rem 1.5rem; }
+            .price { font-size: 3rem; }
+            .logo { font-size: 1.5rem; }
+        }
+
+        /* --- Scroll Animation --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Divine Journeys</div>
+                <div class="header-contact">
+                    <a href="tel:+918378801246" class="contact-btn">
+                        <i class="fas fa-phone"></i>
+                        <span>+91-8378801246</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sacred Ashtavinayak Yatra</h1>
+            <p class="hero-subtitle">Embark on a divine journey to the eight sacred Ganesha temples. A soulful weekend escape from Pune.</p>
+            <a href="#pricing" class="cta-button">
+                <i class="fas fa-calendar-check"></i>
+                <span>View Packages & Book</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">All-Inclusive Spiritual Package</h2>
+                <p class="section-subtitle">One price for a complete, hassle-free pilgrimage experience. No hidden costs.</p>
+            </div>
+            
+            <div class="pricing-card fade-in">
+                <div class="price-badge">Limited Seats Per Yatra</div>
+                <div class="price">₹2,500</div>
+                <div class="price-subtitle">per person • All inclusive</div>
+                
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> Bus Transportation</li>
+                    <li><i class="fas fa-check-circle"></i> 1 Night Accommodation</li>
+                    <li><i class="fas fa-check-circle"></i> All Meals (2 Breakfast + 2 Lunch + Dinner)</li>
+                    <li><i class="fas fa-check-circle"></i> Experienced Tour Guide</li>
+                    <li><i class="fas fa-check-circle"></i> All Temple Entry Arrangements</li>
+                    <li><i class="fas fa-check-circle"></i> Convenient Pickup & Drop in Pune</li>
+                </ul>
+                
+                <a href="#contact" class="cta-button">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Book Your Sacred Seat</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section alternate-bg" id="itinerary">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Your 2-Day Sacred Itinerary</h2>
+                <p class="section-subtitle">A meticulously planned route designed for a fulfilling and spiritually enriching experience.</p>
+            </div>
+            
+            <div class="itinerary-container">
+                <div class="day-card fade-in">
+                    <div class="day-badge">Day 1</div>
+                    <h3 class="day-title">Saturday: The Journey Begins</h3>
+                    <ul class="temple-list">
+                        <li><i class="fas fa-clock temple-icon"></i> 5:00 AM - Departure from Pune</li>
+                        <li><i class="fas fa-om temple-icon"></i> Morgaon (Shri Mayureshwar)</li>
+                        <li><i class="fas fa-om temple-icon"></i> Siddhatek (Shri Siddhivinayak)</li>
+                        <li><i class="fas fa-om temple-icon"></i> Theur (Shri Chintamani)</li>
+                        <li><i class="fas fa-om temple-icon"></i> Ranjangaon (Shri Mahaganapati)</li>
+                        <li><i class="fas fa-bed temple-icon"></i> Night Stay near Lenyadri/Ozar</li>
+                    </ul>
+                </div>
+                
+                <div class="day-card fade-in">
+                    <div class="day-badge">Day 2</div>
+                    <h3 class="day-title">Sunday: Spiritual Culmination</h3>
+                    <ul class="temple-list">
+                        <li><i class="fas fa-mountain-sun temple-icon"></i> Lenyadri (Shri Girijatmaj)</li>
+                        <li><i class="fas fa-om temple-icon"></i> Ozar (Shri Vighneshwar)</li>
+                        <li><i class="fas fa-om temple-icon"></i> Pali (Shri Ballaleshwar)</li>
+                        <li><i class="fas fa-om temple-icon"></i> Mahad (Shri Varadvinayak)</li>
+                        <li><i class="fas fa-house-chimney temple-icon"></i> Return to Pune by 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Glimpses of Your Journey</h2>
+                <p class="section-subtitle">See the moments of devotion, joy, and serenity from our past yatras. Join us to create your own memories.</p>
+            </div>
+            <div class="photo-grid fade-in">
+                <div class="photo-item">
+                    <img src="https://via.placeholder.com/400x300.png?text=Temple+Darshan" alt="Ashtavinayak Yatra photo 1">
+                    <div class="photo-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://via.placeholder.com/400x300.png?text=Group+of+Devotees" alt="Ashtavinayak Yatra photo 2">
+                    <div class="photo-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://via.placeholder.com/400x300.png?text=Serene+Landscape" alt="Ashtavinayak Yatra photo 3">
+                    <div class="photo-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://via.placeholder.com/400x300.png?text=AC+Bus+Comfort" alt="Ashtavinayak Yatra photo 4">
+                    <div class="photo-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://via.placeholder.com/400x300.png?text=Evening+Aarti" alt="Ashtavinayak Yatra photo 5">
+                    <div class="photo-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://via.placeholder.com/400x300.png?text=Prasad" alt="Ashtavinayak Yatra photo 6">
+                    <div class="photo-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section contact alternate-bg" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Ready for Your Divine Journey?</h2>
+                <p class="section-subtitle">Seats fill up fast for our weekend yatras. Contact us now to reserve your spot and seek the blessings of Lord Ganesha.</p>
+            </div>
+            
+            <div class="contact-methods fade-in">
+                <a href="tel:+918378801246" class="contact-method">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <div class="contact-text">
+                        <div>Call Us Directly</div>
+                        <div>+91-8378801246</div>
+                    </div>
+                </a>
+                
+                <a href="https://wa.me/918378801246?text=Hello!%20I'm%20interested%20in%20the%20Ashtavinayak%20Yatra%20from%20Pune." class="contact-method" target="_blank">
+                    <i class="fab fa-whatsapp contact-icon"></i>
+                    <div class="contact-text">
+                        <div>Chat on WhatsApp</div>
+                        <div>Quick & Easy Booking</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/918378801246?text=Hello!%20I'm%20interested%20in%20the%20Ashtavinayak%20Yatra%20from%20Pune." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Divine Journeys. Your trusted partner for spiritual yatras from Pune.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        if (header) {
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        }
+
+        // Scroll animations for sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const fadeInObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            fadeInObserver.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetEl = document.querySelector(this.getAttribute('href'));
+                if (targetEl) {
+                    targetEl.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
