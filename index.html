@@ -34,9 +34,9 @@
                         <span>+91-8378801246</span>
                     </a>
                 </div>
-                <div class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
-                </div>
+                </button>
             </div>
         </div>
     </header>
@@ -46,7 +46,7 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <i class="fas fa-star"></i>
-                New Pilgrimage Service
+                Book Now
             </div>
             <h1>Ashtavinayak Yatra</h1>
             <p class="hero-subtitle">Embark on a divine journey to the eight sacred Ganesha temples. A soulful weekend escape from Pune with complete spiritual immersion.</p>
@@ -63,15 +63,15 @@
             <div class="hero-stats">
                 <div class="stat-item">
                     <div class="stat-number">8</div>
-                    <div class="stat-label">Sacred Temples</div>
+                    <div class="stat-label">Temples</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">2</div>
-                    <div class="stat-label">Spiritual Days</div>
+                    <div class="stat-label">Days</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">1</div>
-                    <div class="stat-label">Divine Journey</div>
+                    <div class="stat-label">Journey</div>
                 </div>
             </div>
         </div>
@@ -83,6 +83,10 @@
     <!-- Features Section -->
     <section class="section features-section">
         <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Experience Divine Comfort</h2>
+                <p class="section-subtitle">We've designed every aspect of your spiritual journey to ensure comfort, safety, and peace of mind</p>
+            </div>
             <div class="features-grid">
                 <div class="feature-card fade-in">
                     <div class="feature-icon">
@@ -290,7 +294,7 @@
                         <div class="photo-content">
                             <h4>Sacred Darshan</h4>
                             <p>Peaceful moments of prayer</p>
-                        </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="photo-item">
@@ -511,6 +515,13 @@
             mobileMenuToggle.addEventListener('click', function() {
                 navMenu.classList.toggle('active');
                 this.classList.toggle('active');
+                
+                // Change icon
+                if (this.classList.contains('active')) {
+                    this.innerHTML = '<i class="fas fa-times"></i>';
+                } else {
+                    this.innerHTML = '<i class="fas fa-bars"></i>';
+                }
             });
         }
 
@@ -550,6 +561,7 @@
                     if (navMenu.classList.contains('active')) {
                         navMenu.classList.remove('active');
                         mobileMenuToggle.classList.remove('active');
+                        mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
                     }
                 }
             });

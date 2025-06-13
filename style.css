@@ -46,7 +46,7 @@
             top: 0;
             left: 0;
             right: 0;
-            background: rgba(253, 247, 228, 0.9);
+            background: rgba(253, 247, 228, 0.95);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             z-index: 1000;
@@ -69,18 +69,19 @@
 
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: var(--primary-dark-brown);
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            z-index: 1001;
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         .nav-link {
@@ -88,6 +89,7 @@
             color: var(--text-primary);
             font-weight: 500;
             transition: color 0.3s ease;
+            padding: 0.5rem;
         }
 
         .nav-link:hover {
@@ -118,11 +120,15 @@
             display: none;
             font-size: 1.5rem;
             cursor: pointer;
+            background: transparent;
+            border: none;
+            color: var(--primary-dark-brown);
+            z-index: 1001;
         }
 
         /* ===== HERO SECTION ===== */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
             background: var(--gradient-hero), url('https://images.unsplash.com/photo-1617639485633-23a5e53696a1?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
             background-size: cover;
             background-position: center;
@@ -132,13 +138,14 @@
             text-align: center;
             color: var(--white);
             position: relative;
+            padding-top: 70px; /* Space for fixed header */
         }
 
         .hero-content {
             max-width: 800px;
             z-index: 10;
             animation: fadeInUp 1s ease-out;
-            padding: 0 20px;
+            padding: 20px;
         }
 
         @keyframes fadeInUp {
@@ -167,7 +174,7 @@
 
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3.8rem;
+            font-size: 3.2rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             line-height: 1.2;
@@ -175,7 +182,7 @@
         }
 
         .hero-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 2.5rem;
             opacity: 0.9;
             font-weight: 300;
@@ -189,13 +196,14 @@
             justify-content: center;
             gap: 1.5rem;
             margin-bottom: 3rem;
+            flex-wrap: wrap;
         }
 
         .cta-button {
             display: inline-flex;
             align-items: center;
             gap: 0.75rem;
-            padding: 1rem 2.5rem;
+            padding: 0.9rem 2rem;
             border-radius: 50px;
             font-weight: 700;
             font-size: 1.1rem;
@@ -226,15 +234,17 @@
             justify-content: center;
             gap: 3rem;
             margin-top: 2rem;
+            flex-wrap: wrap;
         }
 
         .stat-item {
             text-align: center;
+            min-width: 100px;
         }
 
         .stat-number {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             color: var(--accent-gold);
             margin-bottom: 0.5rem;
@@ -335,7 +345,7 @@
 
         .price {
             font-family: 'Playfair Display', serif;
-            font-size: 3.8rem;
+            font-size: 3.2rem;
             font-weight: 700;
             color: var(--primary-dark-brown);
             margin-bottom: 0.5rem;
@@ -841,7 +851,7 @@
         /* ===== RESPONSIVE DESIGN ===== */
         @media (max-width: 992px) {
             .hero h1 {
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
             
             .hero-buttons {
@@ -861,17 +871,20 @@
             
             .nav-menu {
                 position: fixed;
-                top: 70px;
+                top: 0;
                 left: 0;
                 right: 0;
+                height: 100vh;
                 background: var(--background-cream);
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
                 padding: 2rem;
                 gap: 1.5rem;
-                transform: translateY(-150%);
+                transform: translateY(-100%);
                 transition: transform 0.4s ease;
                 box-shadow: var(--shadow-medium);
+                z-index: 1000;
             }
             
             .nav-menu.active {
@@ -882,16 +895,20 @@
                 display: block;
             }
             
+            .header-contact {
+                display: none;
+            }
+            
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             
             .hero-subtitle {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
             
             .stat-number {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .photo-item.featured {
@@ -901,11 +918,19 @@
             .pricing-cards-container {
                 grid-template-columns: 1fr;
             }
+
+            .timeline-container {
+                margin-left: 1rem;
+            }
+
+            .timeline-item {
+                padding-left: 1.5rem;
+            }
         }
 
         @media (max-width: 576px) {
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
             
             .hero-stats {
@@ -918,12 +943,24 @@
             }
             
             .section-title {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             
             .whatsapp-float {
                 width: 50px;
                 height: 50px;
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                min-height: 90vh;
+            }
+
+            .price {
+                font-size: 2.8rem;
+            }
+
+            .day-title {
                 font-size: 1.5rem;
             }
         }
@@ -959,4 +996,28 @@
             font-size: 1.8rem;
             margin-bottom: 1rem;
             color: var(--primary-dark-brown);
+        }
+
+        /* Section header */
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-dark-brown);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Alternate background */
+        .alternate-bg {
+            background-color: rgba(253, 247, 228, 0.3);
         }
