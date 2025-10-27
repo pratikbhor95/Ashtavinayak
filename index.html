@@ -288,39 +288,35 @@
                 <p class="section-subtitle">See the moments of devotion, joy, and serenity that await you on this sacred pilgrimage.</p>
             </div>
             <div class="photo-grid fade-in">
-                <div class="photo-item featured">
-                    <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=500&q=80" alt="Devotees at Ashtavinayak temple darshan">
+                <div class="photo-item">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524443/ballaleshwar_kcfi6w.jpg" alt="ballaleshwar temple darshan">
                     <div class="photo-overlay">
                         <div class="photo-content">
-                            <h4>Sacred Darshan</h4>
-                            <p>Peaceful moments of prayer</p>
+                            <h4>Ballaleshwar</h4>
                         </div> 
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80" alt="Group of happy pilgrims">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524441/varadvinayak_zr0nga.jpg" alt="Varadvinayak">
                     <div class="photo-overlay">
                         <div class="photo-content">
-                            <h4>Happy Pilgrims</h4>
-                            <p>Joyful spiritual community</p>
+                            <h4>Varadvinayak</h4>
                         </div>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=400&q=80" alt="Beautiful temple architecture">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524442/gitijatjmaj_g5grda.jpg" alt="Gitijatjmaj">
                     <div class="photo-overlay">
                         <div class="photo-content">
-                            <h4>Ancient Architecture</h4>
-                            <p>Magnificent temple designs</p>
+                            <h4>Gitijatjmaj</h4>
                         </div>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&q=80" alt="Comfortable bus travel">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524442/vighneshwar_jaf4jd.jpg" alt="Vighneshwar">
                     <div class="photo-overlay">
                         <div class="photo-content">
-                            <h4>Comfortable Travel</h4>
-                            <p>Our comfortable bus fleet</p>
+                            <h4>Vighneshwar</h4>
                         </div>
                     </div>
                 </div>
@@ -329,16 +325,38 @@
                     <div class="photo-overlay">
                         <div class="photo-content">
                             <h4>Evening Aarti</h4>
-                            <p>Divine spiritual ceremonies</p>
                         </div>
                     </div>
                 </div>
                 <div class="photo-item">
-                    <img src="https://images.unsplash.com/photo-1606400082777-ef05f3c5cde2?w=400&q=80" alt="Traditional prasad and offerings">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524442/mahaganpati_e7mwgb.jpg" alt="Mahaganpati">
                     <div class="photo-overlay">
                         <div class="photo-content">
-                            <h4>Sacred Prasad</h4>
-                            <p>Blessed offerings</p>
+                            <h4>Mahaganpati</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524447/chintamani_rw43h1.jpg" alt="Chintamani">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <h4>Chintamani</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524442/siddhivinayak_b2zv9y.jpg" alt="Siddhivinayak">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <h4>Siddhivinayak</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://res.cloudinary.com/dirfpuiij/image/upload/v1761524443/mayureshwar_df5xrj.jpg" alt="Mayureshwar">
+                    <div class="photo-overlay">
+                        <div class="photo-content">
+                            <h4>Mayureshwar</h4>
                         </div>
                     </div>
                 </div>
@@ -391,13 +409,79 @@
                             <small>Instant responses</small>
                         </div>
                     </a>
-
-                    <a href="mailto:info@divinejourneys.com" class="contact-method">
+                    <a class="contact-method" target="_blank">
                         <i class="fas fa-envelope contact-icon"></i>
                         <div class="contact-text">
-                            <div>Email Us</div>
-                            <div>info@divinejourneys.com</div>
-                            <small>Detailed inquiries</small>
+                            <div>Contact Form</div>
+    
+                            <form id="contact-form">
+                                <label>Name:</label><br>
+                                <input type="text" name="name" required>
+                                <br><br>
+                                
+                                <label>Contact (Phone/Email):</label><br>
+                                <input type="text" name="contact">
+                                <br><br>
+                                
+                                <label>Message:</label><br>
+                                <textarea name="message" required></textarea>
+                                <br><br>
+                                
+                                <button class="cta-button" type="submit">Submit</button>
+                            </form>
+                            
+                            <p id="form-status"></p>
+
+
+                            <script>
+                                // 1. Get the form and status elements
+                                const form = document.getElementById('contact-form');
+                                const formStatus = document.getElementById('form-status');
+
+                                // 2. PASTE YOUR DEPLOYED WEB APP URL HERE
+                                const scriptURL = 'https://script.google.com/macros/s/AKfycbyq9EPK5AoWRDL1Cz-GGzisPQbT1eD30BY__rp-rvgJsNCq3PDUWNK_-AYGIXCJ_M0e_A/exec';
+
+                                // 3. Add a 'submit' event listener to the form
+                                form.addEventListener('submit', e => {
+                                    // 4. Prevent the form's default 'submit' behavior
+                                    e.preventDefault();
+                                    
+                                    // 5. Show a "loading" message
+                                    formStatus.textContent = 'Sending...';
+
+                                    // 6. Create a FormData object from the form
+                                    const formData = new FormData(form);
+                                    
+                                    // 7. Convert FormData to a simple JavaScript object
+                                    const dataObject = Object.fromEntries(formData);
+
+                                    // 8. Send the data using fetch()
+                                    fetch(scriptURL, {
+                                        method: 'POST',
+                                        // We must stringify the data and set the correct content-type
+                                        body: JSON.stringify(dataObject),
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        }
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        // 9. Handle the response from the Apps Script
+                                        if (data.result === 'success') {
+                                            formStatus.textContent = 'Message sent successfully!';
+                                            form.reset(); // Clear the form
+                                        } else {
+                                            // This catches errors we defined in the Apps Script
+                                            formStatus.textContent = 'Error: ' + data.message;
+                                        }
+                                    })
+                                    .catch(error => {
+                                        // 10. This catches network errors
+                                        console.error('Error!', error.message);
+                                        formStatus.textContent = 'Error: Failed to send message. Check console.';
+                                    });
+                                });
+                            </script>
                         </div>
                     </a>
                 </div>
