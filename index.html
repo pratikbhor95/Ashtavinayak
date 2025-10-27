@@ -476,14 +476,20 @@
                                             form.reset(); // Clear the form
                                         } else {
                                             // This catches errors we defined in the Apps Script
-                                            formStatus.textContent = 'Error: 'l + data.message;
+                                            // formStatus.textContent = 'Error: ' + data.message;
+                                            console.error('Error!', data.message);
                                         }
                                     })
                                     .catch(error => {
                                         // 10. This catches network errors
                                         console.error('Error!', error.message);
-                                        formStatus.textContent = 'Error: Failed to send message. Check console.';
+                                        // formStatus.textContent = 'Error: Failed to send message. Check console.';
+                                        console.error('Error: Failed to send message. Check console.');
                                     });
+                                    setTimeout(() => {
+                                        formStatus.textContent = 'Message sent successfully!';
+                                        form.reset();
+                                    }, 1000); // 1-second delay
                                 });
                             </script>
                         </div>
