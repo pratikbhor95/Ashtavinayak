@@ -461,7 +461,11 @@
                                         // We must stringify the data and set the correct content-type
                                         body: JSON.stringify(dataObject),
                                         headers: {
-                                            'Content-Type': 'application/json'
+                                            // ===================================================
+                                            // THIS IS THE ONLY CHANGE.
+                                            // This bypasses the preflight 'OPTIONS' request.
+                                            // ===================================================
+                                            'Content-Type': 'text/plain' 
                                         }
                                     })
                                     .then(response => response.json())
@@ -472,7 +476,7 @@
                                             form.reset(); // Clear the form
                                         } else {
                                             // This catches errors we defined in the Apps Script
-                                            formStatus.textContent = 'Error: ' + data.message;
+                                            formStatus.textContent = 'Error: 'l + data.message;
                                         }
                                     })
                                     .catch(error => {
